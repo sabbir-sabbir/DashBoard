@@ -66,7 +66,7 @@ const ProductTraffic = () => {
     <section className="w-full h-auto py-2 px-2 bg-white rounded-lg drop-shadow-lg mt-2">
         <div className="  flex flex-col  items-center gap-2">
             {/* first col */}
-            <div className=" w-full flex justify-between items-center gap-3">
+            <div className="w-full flex justify-between items-center gap-3">
               <div><h1 className="text-[#FF3B30] text-[16px]">Product Traffic</h1></div>
               <div className="flex items-center gap-2">
                 <div className="flex justify-center items-center gap-2">  <span className="w-[4px] h-[4px] bg-black rounded-full"></span> <h1>ALL</h1></div>
