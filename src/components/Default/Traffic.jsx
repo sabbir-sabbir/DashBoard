@@ -33,7 +33,7 @@ const Traffic = () => {
 
 
   return (
-    <section className="grid grid-cols-[auto,300px] h-auto py-2   mt-2">
+    <section className="grid grid-cols-1 md:grid-cols-2 h-auto py-2   mt-2">
         {/* first div */}
          <div className="bg-[#F9F9FA] rounded-lg">
             <div className="ml-10 pt-4"><h1 className="text-[14px] font-semibold text-black">Traffic by Device</h1></div>

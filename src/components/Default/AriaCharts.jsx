@@ -51,7 +51,7 @@ import {
   ];
   return (
     <section
-    className="grid grid-cols-[auto,200px] h-auto py-2   mt-2"
+    className="grid grid-cols-1 md:grid-cols-2 h-auto py-2   mt-2"
   >
     {/* Section One */}
     <div style={{ width: "100%", height: "300px" }}>
@@ -120,13 +120,13 @@ import {
 
 
     {/* Section Two */}
-    <div className="px-4 py-2">
-     <div className="w-full h-auto bg-[#F9F9FA]">
-      <div><h1 className="text-center text-[14px] text-black">Traffic by Website</h1></div>
+    <div className=" px-2 py-5 md:px-4 md:py-2">
+     <div className="w-full h-auto py-3 bg-[#F9F9FA]">
+      <div><h1 className="text-center text-[14px] font-semibold text-black">Traffic by Website</h1></div>
       <div className="grid grid-cols-1 gap-2 px-2">
           {traffic.map((items, index)=> (
                <div key={index} className="flex justify-center items-center gap-2">
-                     <div><h1 className="text-[12px] text-black">{items.name}</h1></div>  
+                     <div><h1 className="text-[12px] font-semibold text-black">{items.name}</h1></div>  
                      <div><img src={items.img} alt="" /></div> 
                </div>
           ))}

@@ -50,9 +50,9 @@ const NavandSidebar = () => {
   return (
    <>
 <section className="w-screen h-auto bg-[#0000001A]/10 p-2">
-  <div className="grid grid-cols-[212px,auto,212px] h-full">
+  <div className="grid grid-cols-1 md:grid-cols-[100px, auto, 100px] sm:grid-cols-[212px,auto,212px] h-full">
     {/* left sidebar */}
-    <div className="bg-white py-2 px-[8px] rounded-l-lg flex flex-col items-center border-r-2 border-[#0000001A]/10">
+    <div className=" hidden sm:bg-white sm:py-2 sm:px-[8px] sm:rounded-l-lg sm:flex sm:flex-col sm:items-center sm:border-r-2 sm:border-[#0000001A]/10">
       <div className="flex justify-center items-center gap-2">
         <div>
           <img src="logo.png" alt="logo" />
@@ -143,7 +143,7 @@ const NavandSidebar = () => {
         )}
       </div>
       <div className="w-full h-auto my-2 flex flex-col">
-        <div className="flex items-center gap-2 justify-center w-[170px] h-[36px] rounded-[12px] hover:bg-gray-400/10">
+        <div className="flex items-center gap-2 ml-7 w-[170px] h-[36px] rounded-[12px] hover:bg-gray-400/10">
           <div>
             <img src="miniarrow.png" alt="arrow-icon" />
           </div>
@@ -165,7 +165,7 @@ const NavandSidebar = () => {
             <h1>Corporate</h1>
           </div>
         </div>
-        <div className="flex items-center gap-2 justify-center w-[170px] h-[36px] rounded-[12px] hover:bg-gray-400/10">
+        <div className="flex items-center gap-2 ml-6 w-[170px] h-[36px] rounded-[12px] hover:bg-gray-400/10">
           <div>
             <img src="miniarrow.png" alt="arrow-icon" />
           </div>
@@ -176,7 +176,7 @@ const NavandSidebar = () => {
             <h1>Blog</h1>
           </div>
         </div>
-        <div className="flex items-center gap-2 justify-center w-[170px] h-[36px] rounded-[12px] hover:bg-gray-400/10">
+        <div className="flex items-center gap-2 ml-6 w-[170px] h-[36px] rounded-[12px] hover:bg-gray-400/10">
           <div>
             <img src="miniarrow.png" alt="arrow-icon" />
           </div>
@@ -190,34 +190,34 @@ const NavandSidebar = () => {
       </div>
     </div>
 
-    {/* middle navigation */}
+   
     <div className="bg-white h-13 flex flex-col  px-1 py-2">
-    <div className="bg-white h-11 flex items-center px-4 mb-3 border-b-2 border-gray-500/10">
+    <div className="bg-white h-11 flex items-center px-3 md:px-4 mb-3 border-b-2 border-gray-500/10">
   <div className="flex justify-between w-full">
     {/* left */}
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-1 md:gap-4">
       <div>
-        <img className="w-4 h-4" src="sidebar.png" alt="sidebar-icon" />
+        <img className=" w-4 h-4" src="sidebar.png" alt="sidebar-icon" />
       </div>
       <div>
-        <img className="w-4 h-4" src="star.png" alt="star-icon" />
+        <img className="  w-4 h-4" src="star.png" alt="star-icon" />
       </div>
       <div className="flex items-center gap-2">
-        <NavLink> <h1 className="text-[#00000066]/40">DashBoards</h1></NavLink>
+        <NavLink> <h1 className=" text-[12px] sm:text-[14px] md:text-[16px] text-[#00000066]/40">DashBoards</h1></NavLink>
         <span>/</span>
-        <NavLink>Default</NavLink>
+        <NavLink className=" text-[12px] sm:text-[14px] md:text-[16px]">Default</NavLink>
         <span>/</span>
-        <NavLink onClick={changePage} >Overview</NavLink>
+        <NavLink className=" text-[12px] sm:text-[14px] md:text-[16px]" onClick={changePage} >Overview</NavLink>
       </div>
     </div>
 
     {/* right */}
-    <div className="flex items-center  mr-2">
-      <div className="w-[190px] h-[28px] px-4  rounded-lg flex items-center ">
-        <img className="w-4 h-4 absolute ml-1" src="search.png" alt="search-icon" />
+    <div className="flex items-center mr-5 md:mr-2">
+      <div className=" w-[100px] h-[20px] px-2  md:w-[190px] md:h-[28px] md:px-4  rounded-lg flex items-center ">
+        <img className=" w-2 h-2 md:w-4 md:h-4 absolute ml-1" src="search.png" alt="search-icon" />
          <input className="outline-none bg-gray-400/40 w-full rounded-lg px-6 " type="text" placeholder="Search"  />
       </div>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-1 md:gap-2">
       <div><img src="sun.png" alt="sun-icon" /></div>
       <div><img  src="bcup.png" alt="backup-icon" /></div>
       <div><img  src="ring.png" alt="bell-icon" /></div>
@@ -241,7 +241,7 @@ const NavandSidebar = () => {
 
 
     {/* right sidebar */}
-    <div className=" bg-white py-2 px-[8px] border-l-2  border-[#0000001A]/10 flex flex-col items-center">
+    <div className=" hidden   sm:bg-white sm:py-2 sm:px-[8px] sm:border-l-2 sm:border-[#0000001A]/10 sm:flex sm:flex-col sm:items-center">
       <div >
         <h1 className="text-[#000000]/100 text-start ">Notifications</h1>
       </div>

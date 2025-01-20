@@ -81,9 +81,9 @@ const DeviceTraffic = () => {
         />
         {/* Y Axis */}
         <YAxis hide={true} />
-        {/* Tooltip */}
+       
         <Tooltip cursor={{ fill: "transparent" }} />
-        {/* Bars with custom colors */}
+        
         <Bar dataKey="value" radius={[12, 12,12, 12]}>
           {data.map((entry, index) => (
             <Cell

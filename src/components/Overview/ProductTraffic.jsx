@@ -2,7 +2,7 @@ import React from 'react'
 import {
     ResponsiveContainer,
     BarChart,
-    CartesianGrid,
+
     XAxis,
     YAxis,
     Tooltip,
@@ -20,7 +20,7 @@ import {
         <rect
           x={x}
           y={y}
-          width={width}
+          width={25}
           height={0.8 * height}
           fill="red"
         />
@@ -28,7 +28,7 @@ import {
         <rect
           x={x}
           y={y + 0.8 * height}
-          width={width}
+          width={25}
           height={0.15 * height}
           fill="gray"
         />
@@ -36,9 +36,9 @@ import {
         <rect
           x={x}
           y={y + 0.95 * height}
-          width={width}
+          width={25}
           height={0.05 * height}
-          fill="black"
+          fill="red"
         />
       </g>
     );
@@ -81,9 +81,9 @@ const ProductTraffic = () => {
             <div className="w-full">
             <ResponsiveContainer width="100%" height={300}>
       <BarChart data={data}>
-        <CartesianGrid strokeDasharray="3 3" />
+     
         <XAxis dataKey="month" />
-        <YAxis />
+        <YAxis hide={true} />
         <Tooltip />
         <Legend />
         <Bar dataKey="value" shape={<CustomBar />} />
