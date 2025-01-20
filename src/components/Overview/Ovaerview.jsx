@@ -1,6 +1,7 @@
 import React from 'react'
 import UsersChart from './UsersChart';
 import DeviceTraffic from './DeviceTraffic';
+import ProductTraffic from './ProductTraffic';
 
 const Ovaerview = () => {
   const dataset = [
@@ -53,6 +54,7 @@ const Ovaerview = () => {
         </div>
        <UsersChart/>
        <DeviceTraffic/>
+       <ProductTraffic/>
 
     </section>
     </>
